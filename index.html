@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CALENDARLIST</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <object type="image/svg+xml" data="img/logo.svg" class="logo"></object>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--selected"
+              >Календарь</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Сообщения</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Собеседники</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Репетиторы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <img src="img/users/kate.png" alt="user picture" class="user-info__user-pic"></img>
+        <div class="user-info__details">
+          <div class="user-info__name">Екатерина М.</div>
+          <div class="user-info__balance">
+            <div class="user-info__gs">52</div>
+            <div class="user-info__currency">2394 $</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="tabs">
+      <header class="tabs__header">
+        <h2 class="tabs__heading">Календарь</h2>
+        <nav class="tabs__nav">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <a href="#" class="tabs__link">Запросы</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#" class="tabs__link">Записи</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#" class="tabs__link">Архив</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="tab__section">
+        <h4 class="tab__section-name">Октябрь 2018</h4>
+        <ul class="tab__list">
+          <li class="tab__item">
+            <div class="card">
+              <div class="date">
+                <div class="date__day">15</div>
+                <div class="date__month">Октября</div>
+                <div class="date__time">18:00 - 20:00</div>
+              </div>
+              <div class="user-info">
+                <div class="user-info__pics">
+                  <div class="user-info__country-pic"></div>
+                  <div class="user-info__user-pic"></div>
+                </div>
+                <div class="user-info__name">Иван Сокольский</div>
+                <div class="user-info__about">
+                  24 года, Россия, среднее образование
+                </div>
+              </div>
+              <div class="card__type">Беседа</div>
+              <div class="card__country-pic"></div>
+              <div class="kebab-menu__icon"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
