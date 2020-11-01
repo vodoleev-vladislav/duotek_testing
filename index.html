@@ -17,8 +17,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link main-nav__link--selected"
-              >Календарь</a
+            <a href="#" class="main-nav__link main-nav__link--selected">Календарь</a
             >
           </li>
           <li class="main-nav__item">
@@ -33,7 +32,7 @@
         </ul>
       </nav>
       <div class="current-user">
-        <img src="img/users/kate.png" alt="user picture" class="current-user__user-pic"></img>
+        <img src="img/users/kate.png" alt="user picture" class="round-picture round-picture--large"></img>
         <div class="current-user__details">
           <div class="current-user__name">Екатерина М.</div>
           <div class="current-user__balance">
@@ -63,8 +62,8 @@
           </ul>
         </nav>
       </header>
-      <section class="tab__section">
-        <h4 class="tab__section-name">Октябрь 2018</h4>
+      <section class="tabs__section">
+        <h4 class="tabs__section-name">Октябрь 2018</h4>
         <ul class="meeting__list">
           <li class="meeting__item">
             <div class="meeting">
@@ -77,8 +76,8 @@
               </div>
               <div class="user-info">
                 <div class="user-info__pics">
-                  <img src="img/countries/germany.png" alt="germany flag" class="user-info__pic"></img>
-                  <img src="img/users/ivan.png" alt="user picture" class="user-info__pic"></img>
+                  <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
+                  <img src="img/users/ivan.png" alt="user picture" class="round-picture"></img>
                 </div>
                 <div class="user-info__column">
                   <div class="user-info__name">Иван Сокольский</div>
@@ -89,15 +88,67 @@
               </div>
               <div class="meeting__details">
                 <div class="meeting__type">Беседа</div>
-                <div class="meeting__pics">
-                  <img src="img/countries/germany.png" alt="germany flag" class="meeting__country-pic"></img>
+                  <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
+                  <div class="kebab-menu">
+                    <div class="kebab-menu__icon"></div>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="meeting__item">
+            <div class="meeting">
+              <div class="date">
+                <div class="date__day">17</div>
+                <div class="date__column">
+                  <div class="date__month">Октября</div>
+                  <div class="date__time">18:00 - 20:00</div>
                 </div>
-                <div class="kebab-menu__icon"></div>
+              </div>
+              <div class="user-info">
+                <div class="user-info__pics">
+                  <img src="img/countries/portugal.png" alt="portugal flag" class="round-picture"></img>
+                  <img src="img/users/konstantin.png" alt="user picture" class="round-picture"></img>
+                </div>
+                <div class="user-info__column">
+                  <div class="user-info__name">Константин Константинопольский</div>
+                  <div class="user-info__about">
+                    24 года, Россия, Высшее образование, Профессиональный репетитор
+                  </div>
+                </div>
+              </div>
+              <div class="meeting__details">
+                <div class="meeting__type">Урок</div>
+                <img src="img/countries/russia.png" alt="germany flag" class="round-picture"></img>
+                <div class="kebab-menu">
+                  <div class="kebab-menu__icon"></div>
+                </div>
               </div>
             </div>
           </li>
         </ul>
       </section>
     </main>
+    <footer class="footer">
+      <object type="image/svg+xml" data="img/logo-greyscale.svg" class="logo"></object>
+      <ul class="footer-list">
+        <li class="footer-list__item"><a href="#" class="footer-list__link">О нас</a></li>
+        <li class="footer-list__item"><a href="#" class="footer-list__link">Помощь</a></li>
+        <li class="footer-list__item"><a href="#" class="footer-list__link">Репетиторам</a></li>
+      </ul>
+      <div class="footer-mobile-ad">
+        <p class="footer-mobile-ad__text">Скачайте приложение и получите приветственный бонус!</p>
+        <div class="footer-mobile-ad__links">
+          <object type="image/svg+xml" data="img/links/google-play-badge.svg" class="logo"></object>
+          <object type="image/svg+xml" data="img/links/app-store-badge.svg" class="logo"></object>
+        </div>
+      </div>
+      <div class="footer-socmedia">
+        <div class="footer-socmedia__list">
+          <li class="footer-socmedia__item"><a href="#" class="footer-socmedia__link"><object data="img/links/facebook.svg" type="image/svg+xml" class="logo"></object></a></li>
+          <li class="footer-socmedia__item"><a href="#" class="footer-socmedia__link"><object data="img/links/vkontakte.svg" type="image/svg+xml" class="logo"></object></a></li>
+          <li class="footer-socmedia__item"><a href="#" class="footer-socmedia__link"><object data="img/links/instagram.svg" type="image/svg+xml" class="logo"></object></a></li>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
