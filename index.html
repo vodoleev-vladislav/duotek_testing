@@ -32,7 +32,7 @@
         </ul>
       </nav>
       <div class="current-user">
-        <img src="img/users/kate.png" alt="user picture" class="round-picture round-picture--large"></img>
+        <img src="img/users/kate.png" alt="user picture" class="round-picture"></img>
         <div class="current-user__details">
           <div class="current-user__name">Екатерина М.</div>
           <div class="current-user__balance">
@@ -47,7 +47,7 @@
     </header>
     <main class="tabs">
       <header class="tabs__header">
-        <h2 class="tabs__heading">Календарь</h2>
+        <h1 class="tabs__heading">Календарь</h1>
         <nav class="tabs__nav">
           <ul class="tabs__list">
             <li class="tabs__item">
@@ -63,69 +63,213 @@
         </nav>
       </header>
       <section class="tabs__section">
-        <h4 class="tabs__section-name">Октябрь 2018</h4>
-        <ul class="meeting__list">
-          <li class="meeting__item">
-            <div class="meeting">
-              <div class="date">
-                <div class="date__day">15</div>
-                <div class="date__column">
-                  <div class="date__month">Октября</div>
-                  <div class="date__time">18:00 - 20:00</div>
-                </div>
-              </div>
-              <div class="user-info">
-                <div class="user-info__pics">
-                  <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
-                  <img src="img/users/ivan.png" alt="user picture" class="round-picture"></img>
-                </div>
-                <div class="user-info__column">
-                  <div class="user-info__name">Иван Сокольский</div>
-                  <div class="user-info__about">
-                    24 года, Россия, среднее образование
+        <article class="tabs__article">
+          <h3 class="tabs__article-name">Октябрь 2018</h3>
+          <ul class="meeting__list">
+            <li class="meeting__item">
+              <div class="meeting">
+                <div class="date">
+                  <div class="date__day">15</div>
+                  <div class="date__column">
+                    <div class="date__month">Октября</div>
+                    <div class="date__time">18:00 - 20:00</div>
                   </div>
                 </div>
-              </div>
-              <div class="meeting__details">
-                <div class="meeting__type">Беседа</div>
+                <div class="user-info">
+                  <div class="user-info__pics">
+                    <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
+                    <img src="img/users/ivan.png" alt="user picture" class="round-picture"></img>
+                  </div>
+                  <div class="user-info__column">
+                    <div class="user-info__name">Иван Сокольский</div>
+                    <div class="user-info__about">
+                      24 года, Россия, среднее образование
+                    </div>
+                  </div>
+                </div>
+                <div class="meeting__details">
+                  <div class="meeting__type">Беседа</div>
                   <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
                   <div class="kebab-menu">
-                    <div class="kebab-menu__icon"></div>
-                  </div>
-              </div>
-            </div>
-          </li>
-          <li class="meeting__item">
-            <div class="meeting">
-              <div class="date">
-                <div class="date__day">17</div>
-                <div class="date__column">
-                  <div class="date__month">Октября</div>
-                  <div class="date__time">18:00 - 20:00</div>
-                </div>
-              </div>
-              <div class="user-info">
-                <div class="user-info__pics">
-                  <img src="img/countries/portugal.png" alt="portugal flag" class="round-picture"></img>
-                  <img src="img/users/konstantin.png" alt="user picture" class="round-picture"></img>
-                </div>
-                <div class="user-info__column">
-                  <div class="user-info__name">Константин Константинопольский</div>
-                  <div class="user-info__about">
-                    24 года, Россия, Высшее образование, Профессиональный репетитор
+                    <div class="kebab-menu__icon">
+                      <object type="image/svg+xml" data="img/kebab-icon.svg"></object>
+                    </div>
+                    <ul class="kebab-menu__list">
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">Cat ipsum</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">dolor sit amet</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">bite plants</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">shred all toilet paper</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="meeting__details">
-                <div class="meeting__type">Урок</div>
-                <img src="img/countries/russia.png" alt="germany flag" class="round-picture"></img>
-                <div class="kebab-menu">
-                  <div class="kebab-menu__icon"></div>
+            </li>
+            <li class="meeting__item">
+              <div class="meeting">
+                <div class="date">
+                  <div class="date__day">17</div>
+                  <div class="date__column">
+                    <div class="date__month">Октября</div>
+                    <div class="date__time">18:00 - 20:00</div>
+                  </div>
+                </div>
+                <div class="user-info">
+                  <div class="user-info__pics">
+                    <img src="img/countries/portugal.png" alt="portugal flag" class="round-picture"></img>
+                    <img src="img/users/konstantin.png" alt="user picture" class="round-picture"></img>
+                  </div>
+                  <div class="user-info__column">
+                    <div class="user-info__name">Константин Константинопольский</div>
+                    <div class="user-info__about">
+                      24 года, Россия, Высшее образование, Профессиональный репетитор
+                    </div>
+                  </div>
+                </div>
+                <div class="meeting__details">
+                  <div class="meeting__type">Урок</div>
+                  <img src="img/countries/russia.png" alt="germany flag" class="round-picture"></img>
+                  <div class="kebab-menu">
+                    <div class="kebab-menu__icon">
+                      <object type="image/svg+xml" data="img/kebab-icon.svg"></object>
+                    </div>
+                    <ul class="kebab-menu__list">
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">Cat ipsum</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">dolor sit amet</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">bite plants</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">shred all toilet paper</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="meeting__item meeting__item--no-border">
+              <div class="meeting">
+                <div class="date">
+                  <div class="date__day">17</div>
+                  <div class="date__column">
+                    <div class="date__month">Октября</div>
+                    <div class="date__time">19:00 - 20:00</div>
+                  </div>
+                </div>
+                <div class="user-info">
+                  <div class="user-info__pics">
+                    <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
+                    <img src="img/users/anna.png" alt="user picture" class="round-picture"></img>
+                  </div>
+                  <div class="user-info__column">
+                    <div class="user-info__name">Анна Петрова</div>
+                    <div class="user-info__about">
+                      24 года, Россия, среднее образование
+                    </div>
+                  </div>
+                </div>
+                <div class="meeting__details">
+                  <div class="meeting__type">Урок</div>
+                  <img src="img/countries/england.png" alt="england flag" class="round-picture"></img>
+                  <div class="kebab-menu">
+                    <div class="kebab-menu__icon">
+                      <object type="image/svg+xml" data="img/kebab-icon.svg"></object>
+                    </div>
+                    <ul class="kebab-menu__list">
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">Cat ipsum</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">dolor sit amet</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">bite plants</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">shred all toilet paper</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="tabs__article">
+          <h3 class="tabs__article-name">Ноябрь 2018</h3>
+          <ul class="meeting__list">
+            <li class="meeting__item">
+              <div class="meeting">
+                <div class="date">
+                  <div class="date__day">15</div>
+                  <div class="date__column">
+                    <div class="date__month">Ноября</div>
+                    <div class="date__time">18:00 - 20:00</div>
+                  </div>
+                </div>
+                <div class="user-info">
+                  <div class="user-info__pics">
+                    <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
+                    <div class="round-picture round-picture--combined">
+                      <object type="image/svg+xml" data="img/search4user.svg" alt="user picture"></object>
+                    </div>
+                    <!-- <object type="image/svg+xml" data="img/links/google-play-badge.svg" class="logo"></object> -->
+                  </div>
+                  <div class="user-info__column">
+                    <div class="user-info__name user-info__name--red">Поиск собеседника</div>
+                    <div class="user-info__about">
+                      Любой пол, среднее образование
+                    </div>
+                  </div>
+                </div>
+                <div class="meeting__details">
+                  <div class="meeting__type">Беседа</div>
+                  <img src="img/countries/germany.png" alt="germany flag" class="round-picture"></img>
+                  <div class="kebab-menu">
+                    <div class="kebab-menu__icon">
+                      <object type="image/svg+xml" data="img/kebab-icon.svg"></object>
+                    </div>
+                    <ul class="kebab-menu__list">
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">Cat ipsum</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">dolor sit amet</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">bite plants</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">shred all toilet paper</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="meeting__item meeting__item--last">
+              <div class="meeting">
+                <div class="date date--red">
+                  <div class="date__day">17</div>
+                  <div class="date__column">
+                    <div class="date__month">Ноября</div>
+                    <div class="date__time">18:00 - 20:00</div>
+                  </div>
+                  <div class="date__reconciliation">
+                    <object type="image/svg+xml" data="img/clock.svg" class="date__reconciliation-clock"></object>
+                    <div class="date__reconciliation-text">Согласование</div>
+                  </div>
+                </div>
+                <div class="user-info">
+                  <div class="user-info__pics">
+                    <img src="img/countries/portugal.png" alt="portugal flag" class="round-picture"></img>
+                    <img src="img/users/kate2.png" alt="user picture" class="round-picture"></img>
+                  </div>
+                  <div class="user-info__column">
+                    <div class="user-info__name">Катерина Иванова</div>
+                    <div class="user-info__about">
+                      44 года, Россия, Высшее образование, Профессиональный реп...
+                    </div>
+                  </div>
+                </div>
+                <div class="meeting__details">
+                  <div class="meeting__type">Урок</div>
+                  <img src="img/countries/russia.png" alt="russian flag" class="round-picture"></img>
+                  <div class="kebab-menu">
+                    <div class="kebab-menu__icon">
+                      <object type="image/svg+xml" data="img/kebab-icon.svg"></object>
+                    </div>
+                    <ul class="kebab-menu__list">
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">Cat ipsum</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">dolor sit amet</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">bite plants</a></li>
+                      <li class="kebab-menu__item"><a href="#" class="kebab-menu__link">shred all toilet paper</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
     <footer class="footer">
@@ -138,8 +282,8 @@
       <div class="footer-mobile-ad">
         <p class="footer-mobile-ad__text">Скачайте приложение и получите приветственный бонус!</p>
         <div class="footer-mobile-ad__links">
-          <object type="image/svg+xml" data="img/links/google-play-badge.svg" class="logo"></object>
           <object type="image/svg+xml" data="img/links/app-store-badge.svg" class="logo"></object>
+          <object type="image/svg+xml" data="img/links/google-play-badge.svg" class="logo"></object>
         </div>
       </div>
       <div class="footer-socmedia">
@@ -150,5 +294,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
