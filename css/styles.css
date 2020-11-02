@@ -29,21 +29,14 @@ body {
 .header {
   background-color: var(--color-primary);
   height: 9.4rem;
-  width: 100vw;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   justify-content: space-between;
 }
 
-.header:first-child {
+.header__logo {
   padding-left: 5vw;
 }
-
-.header:last-child {
-  padding-right: 5vw;
-}
-
 .main-nav {
   height: 100%;
   width: 40vw;
@@ -54,8 +47,8 @@ body {
   list-style: none;
   font-weight: 500;
   font-size: 1.5rem;
-  height: 100%;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -94,9 +87,16 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 62.5em) {
+  .round-picture--resizable {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
 .current-user {
   display: flex;
-  margin-right: 5.5vw;
+  margin-right: 4.3vw;
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -147,6 +147,117 @@ body {
   border-radius: 0 1.25rem 1.25rem 0;
   background-color: var(--color-background);
   border-left: 1px solid var(--color-gray);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburger:hover {
+    color: var(--color-selected);
+  }
+  .hamburger__body,
+  .hamburger__body::before,
+  .hamburger__body::after {
+    width: 3rem;
+    height: 2px;
+    background-color: var(--color-white);
+    display: block;
+    position: absolute;
+  }
+
+  .hamburger__body::before,
+  .hamburger__body::after {
+    content: "";
+    position: absolute;
+    transition: all 0.1s;
+  }
+
+  .hamburger__body::before {
+    top: -1rem;
+  }
+
+  .hamburger__body::after {
+    top: 1rem;
+  }
+
+  .hamburger__body--open {
+    background-color: transparent;
+  }
+
+  .hamburger__body--open::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  .hamburger__body--open::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  .current-user {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+    order: 2;
+    flex: 1 1 100%;
+    margin: 0;
+    background-color: var(--color-primary);
+    z-index: 2;
+  }
+
+  .header--mobile {
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header--mobile > .header__logo {
+    margin-top: 2.2rem;
+  }
+
+  .header--mobile > .current-user {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    z-index: 2;
+    padding: 2rem;
+  }
+
+  .header--mobile > .main-nav {
+    display: block;
+  }
+
+  .main-nav__item {
+    padding: 2rem;
+  }
+
+  .main-nav__list {
+    font-size: 2rem;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .tabs {
@@ -243,6 +354,16 @@ body {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .meeting {
+    flex-wrap: wrap;
+  }
+  .user-info {
+    order: 3;
+    flex: 1 1 100%;
+  }
+}
+
 .meeting__item {
   padding: 3.2rem 0;
 }
@@ -288,7 +409,6 @@ body {
   align-items: center;
   font-size: 1.5rem;
   font-weight: 400;
-  width: 15vw;
   position: relative;
 }
 
@@ -299,6 +419,7 @@ body {
 .date__column {
   display: flex;
   flex-direction: column;
+  overflow-wrap: none;
 }
 
 .date__day {
@@ -412,7 +533,6 @@ body {
 }
 
 .footer {
-  width: 100vw;
   height: 30rem;
   padding: 6rem;
   display: flex;
@@ -429,8 +549,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-right: 18rem;
   margin-top: 0.5rem;
+  margin-right: 15rem;
 }
 
 .footer-list__link {
@@ -443,7 +563,6 @@ body {
 }
 
 .footer-mobile-ad {
-  margin-right: 3rem;
   margin-top: 1rem;
 }
 
@@ -465,6 +584,12 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  width: 8.5vw;
+  width: 10.5rem;
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .footer {
+    flex-wrap: wrap;
+  }
 }

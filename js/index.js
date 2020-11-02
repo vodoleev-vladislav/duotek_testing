@@ -33,6 +33,21 @@
     });
   }
 
+  function addHamburgerListener() {
+    const hamburger = document.querySelector(".hamburger");
+    const header = document.querySelector("header");
+    const hamBody = hamburger.querySelector(".hamburger__body");
+    const currentUser = document.querySelector(".current-user");
+    const mainNav = document.querySelector(".main-nav");
+    hamburger.addEventListener("click", (e) => {
+      // currentUser.classList.toggle("current-user--mobile");
+      // mainNav.classList.toggle("main-nav--mobile");
+      header.classList.toggle("header--mobile");
+      hamBody.classList.toggle("hamburger__body--open");
+    })
+  }
+
   addDropdownsAutoclose();
   addTabSwitch();
+  addHamburgerListener();
 })();
