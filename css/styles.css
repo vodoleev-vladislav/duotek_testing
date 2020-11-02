@@ -387,9 +387,6 @@ body {
 
 .meeting__item {
   padding: 3.2rem 0;
-}
-
-.meeting__item {
   border-bottom: 1px solid var(--color-light-gray);
 }
 
@@ -420,7 +417,7 @@ body {
 }
 
 .meeting > :first-child {
-  margin-right: 1rem;
+  margin-right: 2.6rem;
 }
 
 .meeting__details {
@@ -613,8 +610,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-right: 15rem;
+}
+
+.footer-list__item {
+  margin-bottom: 1rem;
 }
 
 .footer-list__link {
